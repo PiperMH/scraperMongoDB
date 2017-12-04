@@ -1,11 +1,11 @@
 //Headline Controller
 
 // Scripts
-var scrapeInScriptsFile = require("../scripts/scrape");
-var dateInScriptsFile = require("../scripts/date");
+var scrape = require("../scripts/scrape");
+var makeDate = require("../scripts/date");
 
 // Headline and Note mongoose models
-var headlineInModelsFile = require("../models/Headline");
+var Headline = require("../models/Headline");
 
 module.exports = {
   fetch: function(cb) {
