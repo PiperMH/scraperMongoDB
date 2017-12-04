@@ -1,0 +1,32 @@
+{
+  "name": "scrapermonogdb",
+  "version": "1.0.0",
+  "description": "homework mongoose",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiperMH/scraperMongoDB.git"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose"
+  ],
+  "author": "piper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiperMH/scraperMongoDB/issues"
+  },
+  "homepage": "https://github.com/PiperMH/scraperMongoDB#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.13.6",
+    "request": "^2.83.0"
+  }
+}
