@@ -41,7 +41,7 @@ $(document).ready(function() {
         "<a class='article-link' target='_blank' href='" + article.url + "'>",
         article.headline,
         "</a>",
-        "<a class='btn btn-success save'>",
+        "<a class='btn btn-default save'>",
         "Save Article",
         "</a>",
         "</h3>",
