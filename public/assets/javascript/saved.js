@@ -49,7 +49,7 @@ $(document).ready(function() {
         "<a class='btn btn-danger delete'>",
         "Delete From Saved",
         "</a>",
-        "<a class='btn  notes'>Article Notes</a>",
+        "<a class='btn notes'>Article Notes</a>",
         "</h3>",
         "</div>",
         "<div class='panel-body'>",

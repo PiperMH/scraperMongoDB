@@ -7,20 +7,20 @@ var cheerio = require("cheerio");
 
 var scrapeInScriptsFile = function(cb) {
   
-  request("http://www.nytimes.com", function(err, res, body) {
+  request("http://www.theonion.com", function(err, res, body) {
   
     var $ = cheerio.load(body);
 
     var articles = [];
 
-    $(".theme-summary").each(function(i, element) {
+    $(".post-item-frontpage").each(function(i, element) {
   
-      var head = $(this).children(".story-heading").text().trim();
+      var head = $(this).children("header").children(".entry-title").text().trim();
 
-      var url = $(this).children(".story-heading").children("a").attr("href");
+      var url = $(this).children("header").children(".entry-title").children("a").attr("href");
 
-      var sum = $(this).children(".summary").text().trim();
-
+      var sum = $(this).children(".item__content").children(".entry-summary").children("p").text().trim();
+     
       if (head && sum && url) {
         
         var headNeat = head.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
